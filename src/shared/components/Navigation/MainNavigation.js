@@ -18,9 +18,9 @@ const MainNavigation = () => {
       <div className="nav__hamburger cursor-pointer sm:hidden">
         {modal && (
           <Modal>
-            <div className="my-3">
+            <div className="my-3 w-full">
               <IoMdClose
-                className="text-xl cursor-pointer"
+                className="text-2xl  cursor-pointer text-right ml-auto mr-5"
                 onClick={() => setModal(false)}
               />
             </div>
