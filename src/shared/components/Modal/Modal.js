@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 const Modal = (props) => {
   const content = (
     <aside
-      className={`${props.className} flex flex-col items-center bg-gray-800 absolute z-50 top-0 left-0 w-full h-screen opacity-80 text-white`}
+      className={`${props.className} flex flex-col items-center bg-[#00000085] absolute z-50 top-0 left-0 w-full min-h-screen h-full  text-white `}
     >
       {props.children}
     </aside>

@@ -9,6 +9,18 @@ const Users = () => {
       image: "/user-image.jpg",
       places: 3,
     },
+    {
+      id: 2,
+      name: "Raju",
+      image: "/user-image.jpg",
+      places: 3,
+    },
+    {
+      id: 3,
+      name: "chutky",
+      image: "/user-image.jpg",
+      places: 3,
+    },
   ];
   return <UsersList users={USERS} />;
 };

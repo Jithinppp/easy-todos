@@ -6,7 +6,7 @@ const UsersList = (props) => {
     return <div>No users found!</div>;
   }
   return (
-    <ul>
+    <ul className="flex gap-3 flex-wrap">
       {props.users.map((user) => (
         <UserItem
           key={user.id}

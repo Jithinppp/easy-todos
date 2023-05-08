@@ -7,13 +7,18 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: rgb(236, 236, 236);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   box-sizing: border-box;
+  display: grid;
 }
 #root {
-  position: relative;
-  min-height: 100vh;
+  /* position: relative; */
+  /* min-height: 100vh; */
 }
 #drawer-hook {
   position: relative;
 }
+/* .modal__transition {
+  opacity: 1;
+  transition: all ease-in-out 1s;
+} */

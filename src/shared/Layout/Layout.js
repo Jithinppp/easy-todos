@@ -9,10 +9,10 @@ const Layout = (props) => {
       <header>
         <MainNavigation />
       </header>
-      <main className="flex justify-center flex-col px-3">
+      <main className="flex flex-col px-3 my-3 h-full">
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

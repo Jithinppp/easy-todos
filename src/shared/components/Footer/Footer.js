@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-white flex justify-center flex-col items-center py-5 absolute bottom-0 left-0 w-full">
+    <footer className="bg-white flex justify-center flex-col items-center py-5 ">
       <div>
         <Link className="mx-3" to={"#"}>
           LinkedIn

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { FaLocationArrow } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
-import Modal from "./Modal";
+import Modal from "../Modal/Modal";
 
 const MainNavigation = () => {
   const [modal, setModal] = useState(false);
@@ -17,17 +17,25 @@ const MainNavigation = () => {
       </Link>
       <div className="nav__hamburger cursor-pointer sm:hidden">
         {modal && (
-          <Modal>
+          <Modal showModal={modal}>
             <div className="my-3 w-full">
               <IoMdClose
-                className="text-2xl  cursor-pointer text-right ml-auto mr-5"
+                className="text-2xl cursor-pointer text-right ml-auto mr-5"
                 onClick={() => setModal(false)}
               />
             </div>
-            <NavLink to={"/"}>All users</NavLink>
-            <NavLink to={`/u1/places`}>My places</NavLink>
-            <NavLink to={"/places/new"}>Add place</NavLink>
-            <NavLink to={"/auth"}>Authenticate</NavLink>
+            <NavLink className="my-2 w-2/4 text-center" to={"/"}>
+              All users
+            </NavLink>
+            <NavLink className="my-2 w-2/4 text-center" to={`/u1/places`}>
+              My places
+            </NavLink>
+            <NavLink className="my-2 w-2/4 text-center" to={"/places/new"}>
+              Add place
+            </NavLink>
+            <NavLink className="my-2 w-2/4 text-center" to={"/auth"}>
+              Authenticate
+            </NavLink>
           </Modal>
         )}
         <FiMenu className="text-xl" onClick={() => setModal(true)} />
